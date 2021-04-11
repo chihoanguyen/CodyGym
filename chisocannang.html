@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let h,w;
+    h = +prompt("Nhập chiều cao: ");
+    w = +prompt("Nhập cân nặng: ");
+    bmi = (w/h*h);
+    if(bmi<18.5)
+        inter = "Underweight";
+    else if(bmi<25)
+        inter = "Normal";
+    else if(bmi<30)
+        inter = "Overweight";
+    else
+        inter = "Obese";
+    alert("Bạn thuộc nhóm: "+inter);
+</script>
+</body>
+</html>
